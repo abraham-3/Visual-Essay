@@ -1,0 +1,372 @@
+/* *{ border: 1px solid red; } */
+
+html {
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+
+body {
+  background-color: #F4F4F4;
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0;
+}
+
+.page-controls {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.main-content-container {
+  width: 15vw;
+  display: inline;
+  top: 8vh;
+  position: relative;
+  left: 8vw;
+}
+
+.main-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1.2em;
+  color: #1FBBA6;
+  width: 8em;
+  margin-bottom: 0;
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.h1-line {
+    width:60px;
+    border-bottom: 4px solid #1FBBA6;
+    /* height:50px;  */
+    position: inherit;
+    /* left: 5%; */
+    display: inline-block;
+    animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.main-p {
+  /* display: inline; */
+  width: 15em;
+  /* background-color: yellow; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.55);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+
+/* image fade animation for images below */
+
+@keyframes imgFade {
+0% {
+  transform: translateY(25%);
+  opacity: 0;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0)
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+/* first image stuff below */
+
+.img-1-container {
+  position: relative;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 35vw;
+  top: -19vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-1-container img {
+  width: 55em;
+  margin-bottom: 0.8em;
+}
+
+.img-1-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* weather app GIF by tubik studio */
+
+.img-2-container {
+  position: relative;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 8vw;
+  top: -41vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+}
+
+.img-2-container img {
+  width: 25em;
+  margin-bottom: 0.8em;
+}
+
+.img-2-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+.para-1 {
+  width:20em;
+  position: relative;
+  margin: 0;
+  border-left: 2px solid rgba(31,187,166, 0.75);
+  padding-left: 1.8em;
+  left: 56vw;
+  top: -52vh;
+  display: inline-flex;
+
+}
+
+.para-1 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.icons-grid {
+  display: inline;
+  position: relative;
+  top: -28em;
+  left: 21vw;
+  max-width: 100%;
+  width: 10vw;
+}
+
+/* GIF of responsive design below */
+
+.img-3-container {
+  position: relative;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 8vw;
+  top: -41vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+}
+
+.img-3-container img {
+  width: 40em;
+  margin-bottom: 0.8em;
+}
+
+.img-3-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* paragrapgh about responsive design below */
+
+.heading-2-container {
+  display: inline;
+  position: relative;
+  top: -52.5em;
+  left: 60em;
+}
+
+.heading-2-container h1 {
+  width: 11em;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+
+.heading-2-container p a {
+text-decoration: none;
+color: #1FBBA6;
+transition: 0.3s
+}
+
+.heading-2-container p a:hover {
+text-decoration: underline;
+color: rgba(0, 0, 0, 0.65);
+transition: 0.3s
+}
+
+
+.body-p {
+  color: rgba(0, 0, 0, 0.45);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 15em;
+}
+
+.h2-line {
+  width:60px;
+  border-bottom: 4px solid #4df29a;
+  /* height:50px;  */
+  position: inherit;
+  /* left: 5%; */
+  display: inline-block;
+}
+
+/* paragrapgh about form over function below */
+
+.heading-3-container {
+  display: inline;
+  position: relative;
+  top: -27.5em;
+  left: 10em;
+}
+
+.heading-3-container h1 {
+  width: 11em;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+
+.h3-line {
+  width:60px;
+  border-bottom: 4px solid #ff700a;
+  /* height:50px;  */
+  position: inherit;
+  /* left: 5%; */
+  display: inline-block;
+}
+
+/* grid with similar flat UIs below */
+
+.grid-container {
+  display: inline-block;
+}
+
+.grid-wrapper {
+  display: grid;
+  /* grid-template-columns: 10% 10% 10%;
+  grid-template-rows: 5% 5% 5%; */
+  /* grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 150px 150px; */
+  grid-template-columns: 18em 18em 18em;
+  grid-template-rows: 13em 13em 13em;
+  /* grid-template-columns: 18vw 18vw 18vw;
+  grid-template-rows: 15em 15em 15em; */
+  grid-gap: 2%;
+  /* background-color: teal; */
+  color: #444;
+  /* placement below */
+  position: relative;
+  left: 34vw;
+  top: -73vh;
+}
+
+.grid-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  transition: 0.2s ease-in;
+  z-index: 100;
+}
+
+.grid-wrapper img:hover {
+  width: 200%;
+  height: 200%;
+  object-fit: fill;
+  display: inline-block;
+  transition: 0.25s ease-in;
+  /* margin: 4%; */
+  z-index: 50;
+}
+
+/* end of grid */
+
+.lonely-body-p {
+  display: inline;
+  position: relative;
+  width: 10em;
+  color: rgba(0, 0, 0, 0.45);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  width: 15em;
+  top: -10em;
+  left: -36em;
+}
+
+/* GIF of weather app concept below */
+
+.img-4-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 8vw;
+  top: -41vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  top: 148em;
+  left: 41em;
+}
+
+.img-4-container img {
+  width: 55em;
+  margin-bottom: 0.8em;
+}
+
+.img-4-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}

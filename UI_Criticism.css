@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #AC2E00;
+}
+
+.page-controls {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.main-heading {
+  margin: auto;
+  top: 40vh;
+  position: relative;
+  z-index: 300;
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+}
+
+.main-heading h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 5.2em;
+  line-height: 1.2em;
+  width: 10em;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.UX-mark svg {
+  left: -13em;
+  position: absolute;
+  top: -12em;
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+}
+
+.UX-mark-2 svg {
+  position: absolute;
+  top: 46em;
+  left: 65em;
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+}
+
+/* first short paragrapgh below */
+
+.para-1 {
+  width: 18em;
+  position: relative;
+  top: -6em;
+  left: 29em;
+  margin: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.20);
+  padding-left: 1.8em;
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  display: inline-flex;
+  z-index: 100;
+}
+
+.para-1 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* second short paragrapgh below */
+
+.para-2 {
+  width: 29em;
+  position: relative;
+  top: 35em;
+  left: 43em;
+  margin: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.20);
+  padding-left: 1.8em;
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  display: inline-flex;
+  z-index: 100;
+}
+
+.para-2 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* third short paragrapgh below */
+
+.para-3 {
+  width: 15em;
+  position: relative;
+  top: 53em;
+  left: -11em;
+  margin: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.20);
+  padding-left: 1.8em;
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  display: inline-flex;
+  z-index: 100;
+}
+
+.para-3 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* image fade animation for images below */
+
+@keyframes imgFade {
+0% {
+  transform: translateY(25%);
+  opacity: 0;
+  /* visibility: hidden; */
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0);
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  /* visibility: visible; */
+  }
+}
+
+/*first ui example below */
+
+.img-1-container {
+  position: relative;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 3vw;
+  top: -4vh;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15); */
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-1-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  z-index: 500;
+}
+
+.img-1-container img {
+  width: 40em;
+  margin-bottom: 0.8em;
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+}
+
+.img-1-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+
+/* second UI example beolow */
+
+.img-2-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 50vw;
+  top: 3vh;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15); */
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-2-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  z-index: 500;
+}
+
+.img-2-container img {
+  width: 54em;
+  margin-bottom: 0.8em;
+}
+
+.img-2-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* Yoda dashboard UI example below */
+
+.img-3-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 7vw;
+  top: 57em;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15); */
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-3-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  z-index: 500;
+}
+
+.img-3-container img {
+  width: 30em;
+  margin-bottom: 0.8em;
+}
+
+.img-3-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* last ui example below */
+
+.img-4-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 48vw;
+  top: 58em;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15); */
+  /* transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85); */
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-4-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s cubic-bezier(0.74, 0, 1, 0.85);
+  z-index: 500;
+}
+
+.img-4-container img {
+  width: 42em;
+  margin-bottom: 0.8em;
+}
+
+.img-4-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}

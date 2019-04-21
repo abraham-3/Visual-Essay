@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <g id="ellipse-bg-decoration" transform="translate(-8538 -3841)" opacity="0.03">
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(8538 3841)" fill="none" stroke="#000" stroke-width="3">
+      <circle cx="150" cy="150" r="150" stroke="none"/>
+      <circle cx="150" cy="150" r="148.5" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(8588 3891)" fill="none" stroke="#000" stroke-width="3">
+      <circle cx="100" cy="100" r="100" stroke="none"/>
+      <circle cx="100" cy="100" r="98.5" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(8638 3941)" fill="none" stroke="#000" stroke-width="3">
+      <circle cx="50" cy="50" r="50" stroke="none"/>
+      <circle cx="50" cy="50" r="48.5" fill="none"/>
+    </g>
+  </g>
+</svg>

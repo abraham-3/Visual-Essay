@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.page-controls {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.main-content-container {
+  width: 15vw;
+  display: inline;
+  top: 8vh;
+  position: relative;
+  left: 8vw;
+}
+
+.main-h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1.2em;
+  color: rgba(0, 0, 0, 1);
+  width: 6em;
+  margin-bottom: 0;
+}
+
+.h1-line {
+    width:60px;
+    border-bottom: 4px solid rgba(0, 0, 0, 1);
+    /* height:50px;  */
+    position: inherit;
+    /* left: 5%; */
+    display: inline-block;
+}
+
+.main-p {
+  /* display: inline; */
+  width: 20em;
+  /* background-color: yellow; */
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* defined fade-in animation  */
+
+@keyframes imgFade {
+0% {
+  transform: translateY(25%);
+  opacity: 0;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0)
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+/* hero image stuff below */
+
+.img-1-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 40vw;
+  top: 9vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-1-container img {
+  width: 60em;
+  margin-bottom: 0.8em;
+}
+
+.img-1-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* small secondary image stuff below*/
+
+.img-2-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 5vw;
+  bottom: 20vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-2-container img {
+  width: 36em;
+  margin-bottom: 0.8em;
+}
+
+.img-2-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* first short parahrapgh below */
+
+.para-1 {
+  width: 22em;
+  position: relative;
+  margin: 0;
+  border-left: 3px solid rgba(0, 0, 0, 1);
+  padding-left: 1.8em;
+  left: 49vw;
+  top: 41vh;
+  display: inline-flex;
+}
+
+.para-1 h2{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* stuff about basic html form image below*/
+
+.img-3-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 41vw;
+  bottom: -3vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-3-container img {
+  width: 40em;
+  margin-bottom: 0.8em;
+  border: 2px solid black;
+}
+
+.img-3-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+
+/* stuff about 90s website screenshot/ */
+
+.img-4-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 8vw;
+  bottom: -50vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-4-container img {
+  width: 44em;
+  margin-bottom: 0.8em;
+  border: 2px solid black;
+}
+
+.img-4-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* second paragraph stuff below */
+
+.para-2 {
+  width: 22em;
+  position: relative;
+  margin: 0;
+  border-left: 3px solid rgba(0, 0, 0, 1);
+  padding-left: 1.8em;
+  left: 33vw;
+  top: 83vh;
+  display: inline-flex;
+}
+
+.para-2 h2{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Brutalist colour palette stuff below */
+
+.img-5-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 52vw;
+  bottom: -49vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05); */
+}
+
+.img-5-container img {
+  width: 30em;
+  margin-bottom: 0.8em;
+  /* border: 2px solid black; */
+}
+
+.img-5-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* Diss-list website stuff below */
+
+.img-6-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: 32vw;
+  bottom: -107vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.img-6-container img {
+  width: 55em;
+  margin-bottom: 0.8em;
+  /* border: 2px solid black; */
+}
+
+.img-6-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+
+/* last animated brutalist website below */
+
+.img-7-container {
+  position: absolute;
+  max-width: 100%;
+  display: table;
+  margin: 0;
+  left: -3vw;
+  bottom: -116vh;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding-bottom: 0.8em;
+  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05); */
+}
+
+.img-7-container img {
+  width: 30em;
+  margin-bottom: 0.8em;
+  /* border: 2px solid black; */
+}
+
+/* last quoted parahrapgh below */
+
+.para-3 {
+  width: 22em;
+  position: relative;
+  margin: 0;
+  border-left: 3px solid rgba(0, 0, 0, 1);
+  padding-left: 1.8em;
+  left: -35vw;
+  top: 133vh;
+  display: inline-flex;
+}
+
+.para-3 h2{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* .para-3 h2:hover {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.7);
+} */
+
+.para-3 h2 span {
+  font-size: 70%;
+  color: rgba(0, 0, 0, 1);
+}
+
+.para-3 h2 span a{
+  text-decoration: underline;
+  color: #0000FF;
+}

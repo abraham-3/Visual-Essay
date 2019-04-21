@@ -1,0 +1,169 @@
+body {
+  background-color: #5D00E9;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+/* image fade animation for images below */
+
+@keyframes illuFade {
+0% {
+  transform: translateY(15%);
+  opacity: 0;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0)
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+/*
+how to apply the animation below */
+
+/* animation: 0.5s ease-out 0s 1 imgFade; */
+
+
+.bg-grid {
+  position: relative;
+  top: -27vh;
+  left: -15%;
+  display: inline;
+}
+
+@media (min-width: 1500px) and (min-width: 1920px) {
+  .bg-grid {
+    top: -2vh;
+    left: -1%;
+  }
+
+}
+
+/* img {
+  max-width: 100px;
+} */
+
+.illustrations-container {
+  display: inline;
+}
+
+.simple-illu {
+  position: relative;
+  left: -51em;
+  top: -17em;
+  width: 35%;
+  animation: 0.5s ease-out 0s 1 illuFade;
+}
+
+/* indivisula illustrations below */
+
+/* .cards-illu {
+  max-width: 10em;
+  position: relative;
+  top: 13em;
+  left: 22em;
+}
+
+.intersection-illu {
+  max-width: 10em;
+  position: relative;
+  top: 32em;
+  left: 15em;
+}
+
+.motion-illu {
+  max-width: 10em;
+  position: relative;
+  top: -1em;
+  left: -13em;
+}
+
+.search-illu {
+  max-width: 10em;
+  position: relative;
+  top: 14em;
+  left: -26em;
+}
+
+.button-illu {
+  max-width: 10em;
+  position: relative;
+  top: 26em;
+  left: -30em;
+}
+
+.burger-illu {
+  max-width: 8em;
+  position: relative;
+  top: 2em;
+  left: -24em;
+} */
+
+/* end of individual illustrations  */
+
+.content-container {
+  z-index: 100;
+  position: fixed;
+  left: 55em;
+  top: 6em;
+  z-index: 100;
+  /* display: inline; */
+  max-width: 40vw;
+  /* background-color: yellow; */
+  animation: 0.5s ease-out 0s 1 illuFade;
+
+}
+
+@media (min-width: 1920px) {
+    .content-container {
+      left: 71em;
+      top: 16em;
+    }
+}
+
+h1 {
+  width: 27vw;
+  /* display: inline; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1.2em;
+  color: white;
+}
+
+.h1-line {
+  width:60px;
+  border-bottom:3px solid white;
+  /* height:50px;  */
+  position: inherit;
+  /* left: 5%; */
+}
+
+
+p {
+  /* display: inline; */
+  width: 30em;
+  /* background-color: yellow; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: white;
+}
+
+.page-control {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  transition: 0.3s;
+}
+
+@media (min-width: 1902px) {
+  .page-control {
+    left: 91vw;
+    top: 60em;
+    transition: 0.3s;
+}
+  }
+
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152.4" height="152.4" viewBox="0 0 152.4 152.4">
+  <g id="bg-intersection-illu-decoration" transform="translate(-624 -1268)" opacity="0.03">
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(624 1268)" fill="none" stroke="#000" stroke-width="3">
+      <circle cx="57.15" cy="57.15" r="57.15" stroke="none"/>
+      <circle cx="57.15" cy="57.15" r="55.65" fill="none"/>
+    </g>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(681.15 1325.15)" fill="none" stroke="#000" stroke-width="3">
+      <rect width="95.25" height="95.25" stroke="none"/>
+      <rect x="1.5" y="1.5" width="92.25" height="92.25" fill="none"/>
+    </g>
+  </g>
+</svg>

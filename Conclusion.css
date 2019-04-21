@@ -1,0 +1,581 @@
+body {
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+
+}
+
+.page-controls {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  z-index: 200;
+  transition: 0.3s;
+}
+
+.main-header {
+  width: 15vw;
+  display: inline;
+  top: 8vh;
+  position: relative;
+  margin: auto;
+}
+
+.main-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1.2em;
+  color: #651FFF;
+  width: 20em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+.h1-line {
+    width:60px;
+    margin: auto;
+    border-bottom: 4px solid #00FF9B;
+    /* height:50px;  */
+    position: inherit;
+    /* left: 5%; */
+    /* display: inline-block; */
+}
+
+/* image fade animation for images below */
+
+@keyframes imgFade {
+0% {
+  transform: translateY(25%);
+  opacity: 0;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0)
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+/*
+how to apply the animation below */
+
+/* animation: 0.5s ease-out 0s 1 imgFade; */
+
+/* Arounda stuff below */
+
+.img-1-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 10vw;
+  top: 34vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-1-container:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-1-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 48em;
+  margin-bottom: 0.8em;
+}
+
+.img-1-container img:hover {
+  max-width: 100%;
+  min-width: 70%;
+  width: 48em;
+  margin-bottom: 0.8em;
+}
+
+.img-1-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* quote below */
+
+.para-1 {
+  width: 25em;
+  position: relative;
+  margin: 0;
+  border-left: 2px solid rgb(255, 93, 30);
+  padding-left: 1.8em;
+  left: 57vw;
+  top: 40vh;
+  display: inline-flex;
+  animation: 0.5s ease-out 0s 1 imgFade;
+}
+
+.para-1 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.author-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.70);
+}
+
+/* Eventbrite stuff below */
+
+
+.img-2-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  right: 12vw;
+  top: 102vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
+  animation: 0.5s ease-out 0s 1 imgFade;
+}
+
+.img-2-container:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-2-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 48em;
+  margin-bottom: 0.8em;
+}
+
+.img-2-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* quote below */
+
+.para-2 {
+  width: 32em;
+  position: relative;
+  margin: 0;
+  border-left: 2px solid rgb(2, 115, 129);
+  padding-left: 1.8em;
+  left: -11vw;
+  top: 106vh;
+  display: inline-flex;
+  animation: 0.5s ease-out 0s 1 imgFade;
+}
+
+.para-2 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.author-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.70);
+}
+
+
+/* Plato Design stuff below */
+
+.img-3-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 10vw;
+  top: 171vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
+  animation: 0.5s ease-out 0s 1 imgFade;
+  margin-bottom: 5em;
+}
+
+.img-3-container:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  animation: 0.5s cubic-bezier(0.4, 0.0, 0.2, 1) 0s 1 imgFade;
+}
+
+.img-3-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 48em;
+  margin-bottom: 0.8em;
+}
+
+.img-3-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* quote below */
+
+.para-3 {
+  width: 30em;
+  position: absolute;
+  margin: 0;
+  border-left: 2px solid rgb(68, 121, 237);
+  padding-left: 1.8em;
+  right: 16vw;
+  top: 188vh;
+  display: inline-flex;
+  animation: 0.5s ease-out 0s 1 imgFade;
+}
+
+.para-3 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* final conclusion syuff below */
+
+.conclusion {
+  position: absolute;
+  background-color: rgba(93,0,233, 0.05);
+  /* background-color: teal; */
+  bottom: -245vh;
+  width: 100vw;
+  height: 160vh;
+  z-index: 100;
+  top: 165em;
+}
+
+.final-heading {
+  width: 15vw;
+  display: inline;
+  top: 8vh;
+  /* position: relative; */
+  margin: auto;
+}
+
+.final-heading h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1.2em;
+  color: #651FFF;
+  width: 20em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+/* main image gif below */
+
+.img-4-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 60vw;
+  top: 35vh;
+  background-color: rgb(235, 231, 242);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  animation: 0.5s ease-out 0s 1 imgFade;
+  /* margin-bottom: 5em; */
+  z-index: 20;
+}
+
+.img-4-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 35em;
+  margin-bottom: 0.8em;
+}
+
+.img-4-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* Skeuomorphic image stuff below */
+
+.img-5-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 43vw;
+  top: 25vh;
+  background-color: rgb(235, 231, 242);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.08);
+  animation: 0.5s ease-out 0s 1 imgFade;
+  /* margin-bottom: 5em; */
+  z-index: 5;
+}
+
+.img-5-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  /* margin-bottom: 5em; */
+  z-index: 25;
+}
+
+.img-5-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 24em;
+  margin-bottom: 0.8em;
+}
+
+.img-5-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* Flat Design image stuff below */
+
+.img-6-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 46vw;
+  top: 61vh;
+  background-color: rgb(235, 231, 242);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.09);
+  animation: 0.5s ease-out 0s 1 imgFade;
+  /* margin-bottom: 5em; */
+  z-index: 10;
+}
+
+.img-6-container:hover {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.12);
+  /* margin-bottom: 5em; */
+  z-index: 25;
+}
+
+.img-6-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 26em;
+  margin-bottom: 0.8em;
+}
+
+.img-6-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* fourth paragraph stuff below */
+
+.para-4 {
+  width: 24em;
+  position: absolute;
+  margin: 0;
+  /* border-left: 2px solid rgb(68, 121, 237); */
+  padding-left: 1.8em;
+  left: 13vw;
+  top: 50vh;
+  display: inline-flex;
+  animation: 0.2s ease-out 0s 1 imgFade;
+  z-index: 10;
+
+}
+
+.para-4 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.p4-underline {
+  width: 50px;
+  margin: auto;
+  border-bottom: 4px solid #5D00E9;
+  position: inherit;
+  top: 7.4em;
+}
+
+
+/* big "UI" mark stuff below */
+
+@keyframes markAnimation {
+  0%  {
+    left: 5vw;
+    opacity: 1;
+  }
+  100% {
+    left: -4vw;
+    opacity: 0.35;
+  }
+}
+
+.UI-mark {
+  z-index: -5;
+}
+
+.UI-mark svg {
+  position: absolute;
+  top: 30vh;
+  left: -4vw;
+  animation: markAnimation 4s infinite;
+}
+
+/* UX principles image stuff below */
+
+.img-7-container {
+  position: absolute;
+  display: table;
+  margin: 0;
+  left: 13vw;
+  bottom: 10vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.8em;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.09);
+  animation: 0.5s ease-out 0s 1 imgFade;
+  /* margin-bottom: 5em; */
+  z-index: 20;
+}
+
+.img-7-container img {
+  max-width: 100%;
+  min-width: 70%;
+  width: 45em;
+  margin-bottom: 0.8em;
+}
+
+.img-7-container figcaption {
+  /* position: inherit; */
+  font-size: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.10); */
+  text-align: center;
+  display: table-row-group;
+  margin: 0;
+  width: 55em;
+}
+
+/* last paragrapgh stuff below */
+
+.para-5 {
+  width: 22em;
+  position: absolute;
+  margin: 0;
+  /* border-left: 2px solid rgb(68, 121, 237); */
+  padding-left: 1.8em;
+  right: 20vw;
+  top: 122vh;
+  display: inline-flex;
+  animation: 0.2s ease-out 0s 1 imgFade;
+  z-index: 10;
+
+}
+
+.para-5 h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.p5-underline {
+  width: 50px;
+  margin: auto;
+  border-bottom: 4px solid #5D00E9;
+  position: inherit;
+  top: 7.4em;
+}
+
+
+/* big "UX" mark stuff below */
+
+@keyframes mark2Animation {
+  0%  {
+    right: 5vw;
+    opacity: 0.35;
+  }
+  100% {
+    right: -4vw;
+    opacity: 1;
+  }
+}
+
+.UX-mark {
+  z-index: -5;
+}
+
+.UX-mark svg {
+  position: absolute;
+  top: 102vh;
+  right: -4vw;
+  animation: mark2Animation 4s infinite;
+}

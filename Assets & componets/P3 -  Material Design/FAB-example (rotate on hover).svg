@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <filter id="Ellipse_10" x="0" y="0" width="150" height="150" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="FAB-example_rotate_on_hover_" data-name="FAB-example (rotate on hover)" transform="translate(-1526 -1390)">
+    <g transform="matrix(1, 0, 0, 1, 1526, 1390)" filter="url(#Ellipse_10)">
+      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="45" cy="45" r="45" transform="translate(30 24)" fill="#651fff"/>
+    </g>
+    <g id="Group_37" data-name="Group 37" transform="translate(28 -3)">
+      <line id="Line_15" data-name="Line 15" y2="30" transform="translate(1573.5 1447.5)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="Line_16" data-name="Line 16" y2="30" transform="translate(1588.5 1462.5) rotate(90)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
